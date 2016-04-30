@@ -1,0 +1,140 @@
+html, body {
+	height: 100%;
+	color: #333;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+}
+a:visited {
+  color: #333;
+}
+h3 {
+  margin-top: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper {
+  width: 1025px;
+  height: 100vh;
+  /*padding-top: 50px;*/
+  margin: 0 auto;
+  background: #ccc;
+  overflow: hidden;
+}
+.header {
+  clear: both;
+  padding-top: 70px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.slider-hider {
+  float: left;
+  width: 875px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.slider-list {
+  position: relative;
+  width: 10000px;
+  padding: 0;
+}
+.slider-element {
+  display: block;
+  margin-right: 25px;
+  float: left;
+}
+.slider-element img {
+  max-width: 200px;
+}
+.slider-element p {
+  width: 200px;
+  font-size: 13px;
+}
+.slider-arrow-left, .slider-arrow-right {
+  float: left;
+  display: block;
+  width: 50px;
+  height: 25px;
+  margin-top: 120px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  background-color: #000;
+  transition: background 1s;
+}
+.slider-arrow-left:hover, .slider-arrow-right:hover {
+  cursor: pointer;
+  background-color: #707070;
+  transition: background 0.3s;
+}
+.slider-arrow-left {
+  margin-right: 25px;
+}
+.slider-arrow-right {
+  margin-left: 25px;
+}
+.links-tmpl {
+  display: block;
+  margin: 50px 0 0 90px;
+}
+.links-tmpl a:hover {
+  font-weight: 700;
+}
+.links-tmpl ul {
+  list-style: disc;
+}
+.links-tmpl ul li{
+  margin-bottom: 20px;
+}
+.tmpl-modal {
+  position: absolute;
+	width: 330px;
+	height: 470px;
+	top: 50%;
+	left: 50%;
+  padding: 0 30px;
+	margin: -235px 0 0 -260px;
+  color: #000;
+	text-align: left;
+  font-size: 15px;
+	background: rgba(255, 255, 255, 0.7);
+  transition: background 0.3s;
+}
+.tmpl-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .9)
+}
+.underline {
+  text-decoration: underline;
+}
+.info {
+  padding: 6px 0;
+  margin-bottom: 6px;
+}
+.contact-info {
+	height: 16px;
+	margin-bottom: 5px;
+	line-height: 16px;
+  text-align: right;
+  font-size: 13px;
+}
+.skype {
+	margin-left: 263px;
+	text-align: right;
+	background: url('../img/icons.png') no-repeat 0 0;
+}
+.linkedin {
+	margin-left: 262px;
+	text-align: right;
+	background: url('../img/icons.png') no-repeat 0 -18px;
+}
+.facebook {
+	margin-left: 255px;
+	text-align: right;
+	background: url('../img/icons.png') no-repeat 0 -36px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>js_11-12</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/lodash.min.js"></script>
+  <script src="js/jquery.slider.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">An infinite JQuery carousel</div>
+    <div class="slider-arrow slider-arrow-left"><span>&larr;</span></div>
+    <div class="slider-hider">
+      <ul class="slider-list">
+        <li class="slider-element"><img src="img/1.jpg"><p>An Uummannaq Fjord in Northern Greenland. Photo by Ciril Jazbec.</p></li>
+        <li class="slider-element"><img src="img/2.jpg"><p>The Southern Line Islands. Photo by Brian Skerry.</p></li>
+        <li class="slider-element"><img src="img/3.jpg"><p>Game farm in the North West province of South Africa. Photo by Shaul Schwarz.</p></li>
+        <li class="slider-element"><img src="img/4.jpg"><p>A cliff in Zion National Park. Photo by Corey Arnold.</p></li>
+        <li class="slider-element"><img src="img/5.jpg"><p>The coast of Oregon. Photo by Tyrone Turner.</p></li>
+        <li class="slider-element"><img src="img/6.jpg"><p>Southeast Alaska. Photo by Melissa Farlow.</p></li>
+        <li class="slider-element"><img src="img/7.jpg"><p>South Africa. Photo by Keith Ladzinski.</p></li>
+        <li class="slider-element"><img src="img/8.jpg"><p>The Grand Canyon. Photo by Stephen Wilkes.</p></li>
+        <li class="slider-element"><img src="img/1.jpg"><p>An Uummannaq Fjord in Northern Greenland. Photo by Ciril Jazbec.</p></li>
+        <li class="slider-element"><img src="img/2.jpg"><p>The Southern Line Islands. Photo by Brian Skerry.</p></li>
+        <li class="slider-element"><img src="img/3.jpg"><p>Game farm in the North West province of South Africa. Photo by Shaul Schwarz.</p></li>
+        <li class="slider-element"><img src="img/4.jpg"><p>A cliff in Zion National Park. Photo by Corey Arnold.</p></li>
+        <li class="slider-element"><img src="img/5.jpg"><p>The coast of Oregon. Photo by Tyrone Turner.</p></li>
+        <li class="slider-element"><img src="img/6.jpg"><p>Southeast Alaska. Photo by Melissa Farlow.</p></li>
+        <li class="slider-element"><img src="img/7.jpg"><p>South Africa. Photo by Keith Ladzinski.</p></li>
+        <li class="slider-element"><img src="img/8.jpg"><p>The Grand Canyon. Photo by Stephen Wilkes.</p></li>
+      </ul>
+    </div>
+    <div class="slider-arrow slider-arrow-right"><span>&rarr;</span></div>
+    <div class="header">JavaScript micro-templating</div>
+    <div class="links-tmpl">
+      <ul>
+        <li><a href="" class="link-resig">by John Resig</a></li>
+        <li><a href="" class="link-lodash">LoDash</a></li>
+      </ul>
+    </div>
+    <script type="text/template" id="tmpl-resig">
+		  <h3><%= infoResig.name %></h3>
+      <p class="contact-info"><%= infoResig.mail %></p>
+      <p class="contact-info skype"><%= infoResig.skype %></p>
+		  <p class="contact-info linkedin"><%= infoResig.linkedin %></p>
+		  <p class="contact-info facebook"><%= infoResig.facebook %></p>
+		  <p class="contact-info"><%= infoResig.tel %></p>
+      <br>
+      <br>
+      <br>
+			<p class="info"><%= infoResig.lang %></p>
+			<p class="info"><%= infoResig.dbs %></p>
+			<p class="info"><%= infoResig.conceptions %></p>
+      <p class="info"><%= infoResig.editors %></p>
+			<p class="info"><%= infoResig.framework %></p>
+			<p class="info"><%= infoResig.cvs %></p>
+  	</script>
+    <script type="text/template" id="tmpl-lodash">
+		  <p class="info"><h3><%= title %></h3></p>
+      <br><br>
+		  <p class="info"><%= rule %></p>
+		  <p class="info"><code><%= code %></code></p>
+  	</script>
+  </div>
+</body>
+</html>
